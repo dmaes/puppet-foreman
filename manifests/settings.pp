@@ -55,6 +55,7 @@ class foreman::settings (
   }
   unless empty($outofsync_interval) {
     foreman_config_entry { 'outofsync_interval':
-      value => $value
+      value => $outofsync_interval,
+    }
   }
 }
