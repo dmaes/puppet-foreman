@@ -249,7 +249,7 @@ class foreman (
   String $version = 'present',
   Enum['installed', 'present', 'latest'] $plugin_version = 'present',
   Boolean $db_manage = true,
-  Optional[Stdlib::Host] $db_host = undef,
+  Optional[String] $db_host = undef,
   Optional[Stdlib::Port] $db_port = undef,
   String[1] $db_database = 'foreman',
   String[1] $db_username = 'foreman',
